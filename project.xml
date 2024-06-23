@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="ParappaEngine" package="com.sample.parappaengine" version="1.0.0" company="Company Name"/>
+	<app main="Main" path="Export" file="PaRappaEngine"/>
+	<window width="1280" height="720" resizable="false" background="#000000"/>
+	
+	<source path="Source"/>
+
+	<section if="32bit">
+		<set name="BUILD_DIR" value="Export/debug/32bit" 	if="debug"/>
+		<set name="BUILD_DIR" value="Export/release/32bit" 	if="release"/>
+		<set name="BUILD_DIR" value="Export/final/32bit" 	if="final"/>
+	</section>
+
+	<section unless="32bit">
+		<set name="BUILD_DIR" value="Export/debug/64bit" 	if="debug"/>
+		<set name="BUILD_DIR" value="Export/release/64bit" 	if="release"/>
+		<set name="BUILD_DIR" value="Export/final/64bit" 	if="final"/>
+	</section>
+
+	<assets path="Assets" rename="assets"/>
+
+	<haxeflag name="--macro" value="game.backend.macros.Defines.run()"/>
+
+	<haxelib name="lime" 			version="8.1.2"/> <!-- native backend -->
+	<haxelib name="openfl" 			version="9.3.3"/> <!-- engine backend -->
+	<haxelib name="flixel" 			version="5.8.0"/> <!-- engine -->
+
+	<haxelib name="flixel-addons" 	version="3.2.3"/>
+
+	<haxelib name="thx.semver" 		version="0.2.2"/> <!-- handling versions -->
+
+</project>

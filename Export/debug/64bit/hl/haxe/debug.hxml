@@ -1,0 +1,44 @@
+-main ApplicationMain 
+--macro lime._internal.macros.DefineMacro.run()
+-cp C:/HaxeToolkit/haxe/lib/lime/8,1,2/src
+-D lime=8.1.2
+-cp C:/HaxeToolkit/haxe/lib/flixel/5,8,0
+-D flixel=5.8.0
+--macro openfl.utils._internal.ExtraParamsMacro.include()
+-cp C:/HaxeToolkit/haxe/lib/openfl/9,3,3/src
+-D openfl=9.3.3
+--macro keep('IntIterator')
+-cp C:/HaxeToolkit/haxe/lib/hscript/git
+-D hscript=2.5.0
+-cp C:/HaxeToolkit/haxe/lib/flixel-addons/3,2,3
+-D flixel-addons=3.2.3
+-D thx_semver
+-cp C:/HaxeToolkit/haxe/lib/thx,semver/0,2,2/src
+-D thx.semver=0.2.2
+-cp Source
+-D lime-openal
+-D ANDROID_SETUP=true
+-D ANDROID_NDK_ROOT=C:\Program Files\Java\android-ndk-r15c
+-D native
+-D lime-curl
+-D openfl-native
+-D openfl-disable-handle-error
+-D lime-harfbuzz
+-D tools=8.1.2
+-D ANDROID_SDK=C:\Users\Home\AppData\Local\Android\Sdk
+-D lime-cairo
+-D lime-opengl
+-D no-compilation
+-D lime-native
+-D lime-vorbis
+-D JAVA_HOME=C:\Program Files\Java\jdk1.8.0_361
+-D lime-cffi
+-D windows
+-D desktop
+--macro game.backend.macros.Defines.run()
+--remap flash:openfl
+--macro flixel.system.macros.FlxDefines.run()
+-cp Export/debug/64bit/hl/haxe
+-hl Export/debug/64bit/hl/obj/ApplicationMain.hl
+--macro keep("Main")
+-debug
