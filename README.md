@@ -7,3 +7,5 @@ always open for devs!
 README Updates soon.
 
 This is a fan-made project, not affiliated by Sony Interactive Entertainment, all rights reserved.
+
+Join the PaRappa Engine Discord server! https://discord.gg/YXUkES3Ybu 
