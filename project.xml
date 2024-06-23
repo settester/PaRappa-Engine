@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="ParappaEngine" package="com.sample.parappaengine" version="1.0.0" company="Company Name"/>
+	<meta title="ParappaEngine" package="com.sample.parappaengine" version="1.0.0" company="ParappaEngine Team"/>
 	<app main="Main" path="Export" file="PaRappaEngine"/>
 	<window width="1280" height="720" resizable="false" background="#000000"/>
 	
