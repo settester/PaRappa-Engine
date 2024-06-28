@@ -29,6 +29,10 @@
 
 	<haxelib name="flixel-addons" 	version="3.2.3"/>
 
+	<section if="cpp">
+		<haxelib name= "hxdiscord_rpc" version="1.1.1"/> <!-- discord rpc -->
+	</section>
+
 	<haxelib name="thx.semver" 		version="0.2.2"/> <!-- handling versions -->
 
 </project>
